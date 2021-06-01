@@ -1,5 +1,3 @@
-# PlateIQ_MMT_UIAutomation
-<<<<<<< HEAD
 Assignment for UI Automation on MMT website 
 
 
@@ -40,7 +38,3 @@ For Login, few more scenarios that could be covered:
 4. Blank username and Blank password  should not work
 5. SQL injection attacks & XSS should be verified for login
 
-Many more such scenarios could be figured and tested. 
-=======
-Take Home Assignment for MMT UI Automation on 2 Scenarios
->>>>>>> d79f205341fd376302a118f785729f612ad82a02

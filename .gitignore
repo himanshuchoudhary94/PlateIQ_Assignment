@@ -1,5 +1,5 @@
 *.cache
 *.pyc
 /main.py
-/venv
+venv/
 /.pytest_cache
