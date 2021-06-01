@@ -11,6 +11,7 @@ from utilities.BaseClass import BaseClass
 class TestBooking(BaseClass):
 
     def test_correctWebsiteOpened(self):
+        """This function tests whether the website opened is correct or not"""
 
         log = self.getlogger()
         homePage = HomePage(self.driver)
@@ -28,12 +29,15 @@ class TestBooking(BaseClass):
         assert self.driver.title == title, "Incorrect Website Opened"
 
     def test_clickFlightMenu(self, getBookingData):
+        """This function tests whether flight menu opened or not"""
+
         homePage = HomePage(self.driver)
         homePage.flightMenu().click()
         FlightUrl = self.driver.current_url
         assert "flight" in FlightUrl, "Incorrect URL Opened"
 
     def test_checkSourceDestination(self, getBookingData):
+        """This function checks whether selected city name is correctly displayed or not"""
         log = self.getlogger()
         homePage = HomePage(self.driver)
         homePage.clickFromCity().click()
@@ -59,11 +63,13 @@ class TestBooking(BaseClass):
 
         ToCitySelected = homePage.clickToCity().get_attribute("value")
         assert ToCitySelected == getBookingData['toCity'], "Incorrect City Name Reflecting"
-        time.sleep(1)
 
     def test_checkDateSelected(self, getBookingData):
+        """This function checks whether selected date is correctly displayed or not"""
+
         log = self.getlogger()
         homePage = HomePage(self.driver)
+        time.sleep(1)
         depDate = (datetime.date.today() + datetime.timedelta(days=2)).strftime("%b %d %Y")
         dep_dates = homePage.grabDates()
         log.info(depDate)
@@ -96,6 +102,9 @@ class TestBooking(BaseClass):
         assert ReturnDateSelected.split(", ")[1] in CheckReturnDateSelected, "Incorrect Date Selected"
 
     def test_checkTravellerInfo(self, getBookingData):
+        """This function checks whether details like count of adult, children, infants is correct or not.
+        It also checks the class selection is correct or not"""
+
         log = self.getlogger()
         homePage = HomePage(self.driver)
         homePage.chooseTravellers().click()
@@ -126,6 +135,8 @@ class TestBooking(BaseClass):
                 break
 
     def test_checkAppliedSettings(self, getBookingData):
+        """This function tests whether passenger count and class selected is correctly visible or not"""
+
         log = self.getlogger()
         homePage = HomePage(self.driver)
         homePage.travellersApplyButton().click()
@@ -134,10 +145,12 @@ class TestBooking(BaseClass):
         log.info(homePage.travellerNumber().text)
         assert int(homePage.travellerNumber().text) == totalTravellers, "Incorrect total Count reflected"
         assert homePage.categorySelected().text == "Economy/Premium Economy", "Incorrect Category Selected"
-        homePage.seachButton().click()
 
     def test_checkSelectedFlights(self, getBookingData):
+        """This function checks correct flight is selected or not"""
+
         homePage = HomePage(self.driver)
+        homePage.seachButton().click()
         self.explicit_wait(HomePage.FromBooking)
         homePage.returnDriver().execute_script("window.scrollTo(0, 150)")
         homePage.fromBooking()[getBookingData['fromFlightPositionSelect']].click()
@@ -152,13 +165,13 @@ class TestBooking(BaseClass):
             "class"), "Incorrect Flight Selected"
 
     def test_checkBookButton(self):
-        log = self.getlogger()
+        """This function tests whether book button is working correctly on not"""
+
         homePage = HomePage(self.driver)
         self.explicit_wait(HomePage.FromBooking)
         homePage.bookButton().click()
         self.explicit_wait(HomePage.ContinueButton)
         assert homePage.continueButton().is_displayed(), "Book Button didn't work correctly"
-        log.info("Test Finished")
 
     @pytest.fixture(params=HomePageData.homePageData)
     def getBookingData(self, request):

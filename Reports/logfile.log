@@ -1,0 +1,20 @@
+2021-06-01 14:36:55,233 :INFO : test_correctWebsiteOpened :Inside Modal
+2021-06-01 14:36:57,334 :INFO : test_checkSourceDestination :Goa, India
+2021-06-01 14:36:58,522 :INFO : test_checkSourceDestination :Mumbai, India
+2021-06-01 14:36:59,645 :INFO : test_checkDateSelected :Jun 03 2021
+2021-06-01 14:37:00,856 :INFO : test_checkDateSelected :Jun 04 2021
+2021-06-01 14:37:02,154 :INFO : test_checkTravellerInfo :children-1
+2021-06-01 14:37:02,346 :INFO : test_checkAppliedSettings :2
+2021-06-01 14:37:02,366 :INFO : test_checkAppliedSettings :2
+2021-06-01 14:37:40,873 :INFO : test_checkBookButton :Test Finished
+2021-06-01 14:37:49,522 :INFO : test_checkCorrectWebsiteOpened :NoSuchElementException
+2021-06-01 14:39:17,006 :INFO : test_correctWebsiteOpened :NoSuchElementException
+2021-06-01 14:39:19,085 :INFO : test_checkSourceDestination :Goa, India
+2021-06-01 14:39:20,260 :INFO : test_checkSourceDestination :Mumbai, India
+2021-06-01 14:39:21,377 :INFO : test_checkDateSelected :Jun 03 2021
+2021-06-01 14:39:22,585 :INFO : test_checkDateSelected :Jun 04 2021
+2021-06-01 14:39:23,887 :INFO : test_checkTravellerInfo :children-1
+2021-06-01 14:39:24,070 :INFO : test_checkAppliedSettings :2
+2021-06-01 14:39:24,089 :INFO : test_checkAppliedSettings :2
+2021-06-01 14:40:02,607 :INFO : test_checkBookButton :Test Finished
+2021-06-01 14:40:08,771 :INFO : test_checkCorrectWebsiteOpened :NoSuchElementException
