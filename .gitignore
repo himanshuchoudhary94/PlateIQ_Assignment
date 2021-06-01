@@ -3,3 +3,4 @@
 /main.py
 venv/
 /.pytest_cache
+*.idea
