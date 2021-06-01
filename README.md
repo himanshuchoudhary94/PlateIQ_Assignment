@@ -24,3 +24,19 @@ Out of scope:
 ● Ignore Create New Account, Reset password
 ● Ignore Facebook & Google login & sign up.
 Do let me know in case of any doubts/clarifications.
+
+
+Approach:
+
+A Page Object Model framework implemented with separte packages for Locators, ultilies, tests cases and test data.
+
+I Automated basic functional test cases on 'flight booking' and 'login' scenario with corresponding assertions. 
+
+For Login, few more scenarios that could be covered:
+1. After Password reset, old Password should not work, new one should work fine
+2. Password should be masked; it must not reveal characters 
+3. Password must be stored in DB in encrypted format
+4. Blank username and Blank password  should not work
+5. SQL injection attacks & XSS should be verified for login
+
+Many more such scenarios could be figured and tested. 
