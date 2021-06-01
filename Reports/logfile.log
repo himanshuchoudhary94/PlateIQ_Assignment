@@ -36,3 +36,12 @@
 2021-06-01 16:58:47,572 :INFO : test_checkAppliedSettings :2
 2021-06-01 16:58:47,597 :INFO : test_checkAppliedSettings :2
 2021-06-01 16:59:25,736 :INFO : test_checkCorrectWebsiteOpened :Inside Modal
+2021-06-01 17:29:48,036 :INFO : test_correctWebsiteOpened :Inside Modal
+2021-06-01 17:29:51,067 :INFO : test_checkSourceDestination :Goa, India
+2021-06-01 17:29:52,445 :INFO : test_checkSourceDestination :Mumbai, India
+2021-06-01 17:29:53,646 :INFO : test_checkDateSelected :Jun 03 2021
+2021-06-01 17:29:55,092 :INFO : test_checkDateSelected :Jun 04 2021
+2021-06-01 17:29:56,638 :INFO : test_checkTravellerInfo :children-1
+2021-06-01 17:29:56,947 :INFO : test_checkAppliedSettings :2
+2021-06-01 17:29:56,976 :INFO : test_checkAppliedSettings :2
+2021-06-01 17:30:38,127 :INFO : test_checkCorrectWebsiteOpened :NoSuchElementException
