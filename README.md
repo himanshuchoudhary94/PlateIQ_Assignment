@@ -46,7 +46,7 @@ Following are the test cases that are implemented in the automation script:
 3. cd projectname/
 4. pip install -r requirements.txt
 3. Install all the tools mentioned in requirements.txt
-4. Run file startTest.sh (sh startTest.sh)
+4. Run file startTest.sh (sh startTest.bat)
 5. HTML Report is generated in the same project in Reports Folder along with logs after running startTest.sh.
 
 **HTML Report**
@@ -62,14 +62,6 @@ For Login, few more scenarios that could be covered:
 4. Blank username and Blank password  should not work
 5. SQL injection attacks & XSS should be verified for login
 
-**Steps to run automation script -**
-1. Go to Automation Project https://github.com/himanshuchoudhary94/PlateIQ_MMT.git
-2. Clone it
-3. cd projectname/
-4. pip install -r requirements.txt
-3. Install all the tools mentioned in requirements.txt
-4. Run file startTest.sh (sh startTest.sh)
-5. HTML Report is generated in the same project in Reports Folder along with logs after running startTest.sh.
 
 **HTML Report**
 
